@@ -1,0 +1,29 @@
+body {
+    margin: 150px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+.pexel {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    
+}
+.pexel img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+@media  (max-width: 678px){
+    body{
+        margin: 50px;
+    }
+    
+    .pexel {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
