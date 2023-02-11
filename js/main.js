@@ -23,7 +23,7 @@
 //     })
 
 let getPhotos;
-fetch("https://api.pexels.com/v1/curated?per_page=9")
+fetch("https://api.pexels.com/v1/curated?per_page=36")
   .then((response) => response.json())
   .then((data) => {
     getPhotos = data.photos;
